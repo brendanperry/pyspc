@@ -17,13 +17,13 @@
 
 from setuptools import setup, find_packages
 
-setup(name='pyspcalt',
-      version='1.0',
-      description='An altered version of pyspc from https://github.com/carlosqsilva/pyspc that does not break other graphs',
-      long_description='An altered version of pyspc from https://github.com/carlosqsilva/pyspc that does not break other graphs',
-      url='https://github.com/brendanperry/pyspc',
-      author='Brendan Perry',
-      author_email='bperry@hey.com',
+setup(name='pyspc',
+      version='0.4',
+      description='Statistical Process Control Charts Library for Humans',
+      long_description='Statistical Process Control Charts Library for Humans',
+      url='https://github.com/carlosqsilva/pyspc',
+      author='Carlos Silva',
+      author_email='carlosqsilva@outlook.com',
       license='GPLv3',
       packages=find_packages(),
       package_dir={ "pyspc": "pyspc" },

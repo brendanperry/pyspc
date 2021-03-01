@@ -25,6 +25,10 @@ import matplotlib as mpl
 import numpy as np
 import pandas as pd
 
+plt.style.use('grayscale')
+mpl.rcParams['lines.markersize'] = 4
+
+
 class spc(object):
     """
     spc is the main class of the library. It receive the data, plot the chart
@@ -86,7 +90,7 @@ class spc(object):
         Save the chart to a image file.
 
         :param filename: name of the image file, if no extenssion is provide it will be save as '.png'.
-        :param **kwargs: see matplotlib.figure.Figure.savefig for more details.
+        :param **kwargs: see matplotlib.figure.Figure.savefig for more details. 
         """
         if len(self.summary) == 0:
             self.make()
@@ -121,7 +125,5 @@ class spc(object):
                 summary['violation-points'] = self.points.plot_violation_points(ax, values, center, lcl, ucl)
 
             self.summary = summary
-
-            print(summary)
 
         self.fig.tight_layout()
